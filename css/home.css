@@ -1,0 +1,145 @@
+/* General body styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #ff6b6b, #f0e130);
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+}
+
+/* Sidebar styles */
+.sidebar {
+    width: 200px;
+    background-color: rgba(51, 51, 51, 0.8);
+    color: white;
+    transition: width 0.3s;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+    backdrop-filter: blur(15px);
+}
+
+.sidebar:hover {
+    width: 250px;
+}
+
+.logo-title {
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.logo-title h2{
+    font-family: 'Rowdies', cursive;
+}
+.logo {
+    width: 30%; /* Adjust logo size */
+    
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.buttons a {
+    font-family: 'Rowdies', cursive;
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    border-radius: 20px;
+    transition: background-color 0.3s, transform 0.3s;
+    margin: 5px 0; /* Spacing between buttons */
+}
+
+.buttons a:hover {
+    background-color: #444;
+    transform: scale(1.05);
+}
+
+.logout {
+    position: absolute;
+    font-family: 'Rowdies', cursive;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+/* Main content styles */
+.main-content {
+    margin-left: 200px;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Rowdies', cursive;
+    color: white;
+}
+
+/* Tax Calculator Styles */
+.tax-calculator {
+    position: relative;
+    margin-top: 20px;  
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+    width: 450px; /* Extended width */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+input {
+    width: 100%;
+    padding: 12px; /* Increased padding */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    font-size: 16px;
+    background-color: transparent; /* Make the input background transparent */
+    margin-bottom: 15px; /* Space between input fields */
+}
+
+input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Placeholder styles */
+input::placeholder {
+    color: #aaa;
+}
+
+input:focus::placeholder {
+    color: transparent; /* Hide placeholder on focus */
+}
+
+/* Button styles */
+button {
+    background-color: rgba(255, 255, 255, 0.6);;
+    font-family: 'Rowdies', cursive;
+    color: gray;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #939496;
+    transform: scale(1.05);
+}

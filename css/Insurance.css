@@ -1,0 +1,155 @@
+body {
+    font-family: 'Rowdies', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('../img/insurance.gif'); /* Adjust the path to your image */
+    background-size: 100%; /* Makes the image cover the entire background */
+    background-position: center; /* Positions the image to the left */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+.sidebar {
+width: 200px;
+background-color: rgba(51, 51, 51, 0.8);
+color: white;
+transition: width 0.3s;
+position: fixed;
+top: 0;
+bottom: 0;
+overflow: hidden;
+backdrop-filter: blur(15px);
+}
+
+.sidebar:hover {
+width: 250px;
+}
+
+.logo-title {
+padding: 20px;
+text-align: center;
+
+}
+
+.logo-title h2{
+font-family: 'Rowdies', cursive;
+}
+.logo {
+width: 30%; /* Adjust logo size */
+
+}
+
+.buttons {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 150px;
+}
+
+.buttons a {
+font-family: 'Rowdies', cursive;
+color: white;
+padding: 15px;
+text-decoration: none;
+text-align: center;
+width: 100%;
+border-radius: 20px;
+transition: background-color 0.3s, transform 0.3s;
+margin: 5px 0; /* Spacing between buttons */
+}
+
+.buttons a:hover {
+background-color: #444;
+transform: scale(1.05);
+}
+
+.logout {
+position: absolute;
+font-family: 'Rowdies', cursive;
+bottom: 20px;
+width: 100%;
+text-align: center;
+color: white;
+text-decoration: none;
+}
+.toggle-section {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+}
+input:checked + .slider {
+    background-color: #2196F3;
+}
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+.slider.round {
+    border-radius: 34px;
+}
+.slider.round:before {
+    border-radius: 50%;
+}
+.insurance-container {
+    margin: 100px auto;
+    max-width: 1400px;
+    margin: 120px 50px 20px 350px;
+}
+.insurance-box {
+    display: flex;
+    backdrop-filter: blur(10px);
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px ;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.company-info {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+.company-info img {
+    width: 80px;
+    margin-right: 20px;
+}
+.payment {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 30%;
+}
+.payment div {
+    background-color: #ddd;
+    padding: 10px 20px;
+    border-radius: 5px;
+}

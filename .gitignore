@@ -1,0 +1,10 @@
+# Ignore Composer dependencies
+vendor/
+composer.lock
+
+# Ignore MacOS hidden files
+.DS_Store
+
+# Ignore environment/config files with real passwords if you create them
+# config.php
+# email_config.php

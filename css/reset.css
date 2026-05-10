@@ -1,0 +1,60 @@
+/* General styles for the body */
+body {
+    font-family: Arial, sans-serif; /* Set a basic font */
+    background-color: #f4f4f4; /* Light gray background */
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for the reset password form */
+.container {
+    width: 400px; /* Set a fixed width for the container */
+    background-color: white; /* White background for the form */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px; /* Padding inside the container */
+    margin: 100px auto; /* Center the container vertically and horizontally */
+}
+
+/* Heading style */
+h3 {
+    text-align: center; /* Center the heading */
+    color: #333; /* Dark color for the heading */
+}
+
+/* Input fields styles */
+input[type="password"] {
+    width: 100%; /* Full width input fields */
+    padding: 10px; /* Padding inside the input fields */
+    margin: 10px 0; /* Margin above and below the input fields */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 3px; /* Slightly rounded corners */
+    box-sizing: border-box; /* Include padding in width */
+}
+
+/* Button styles */
+button {
+    width: 100%; /* Full width button */
+    padding: 10px; /* Padding inside the button */
+    background-color: #5cb85c; /* Green background for the button */
+    color: white; /* White text color */
+    border: none; /* No border */
+    border-radius: 3px; /* Slightly rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size for the button */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #4cae4c; /* Darker green on hover */
+}
+
+/* Error and success message styles */
+.error-message, .success-message {
+    color: red; /* Red color for error messages */
+    text-align: center; /* Center the error messages */
+}
+
+.success-message {
+    color: green; /* Green color for success messages */
+}

@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    font-family: 'Rowdies', cursive;
+    height: 100vh;
+    background-color: #ffeb3b; /* Vibrant background color */
+    position: relative;
+}
+
+.background-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    font-weight: bold;
+    color: rgba(18, 20, 14, 0.2); /* Background text with transparency */
+}
+
+.sidebar {
+    width: 200px;
+    background-color: rgba(51, 51, 51, 0.8);
+    color: white;
+    transition: width 0.3s;
+    overflow: hidden;
+    position: relative;
+    backdrop-filter: blur(10px);
+}
+
+.sidebar:hover {
+    width: 250px;
+}
+
+.logo-title {
+    padding: 20px;
+    text-align: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 180px; /* Buttons are centered */
+}
+
+.buttons a {
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+}
+
+.buttons a:hover {
+    background-color: #444;
+}
+
+.quit {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+/* Bank List */
+.bank-list {
+    position: absolute;
+    top: 50%;
+    left: 350px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 200px;
+}
+
+.bank-box {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px 0; /* Adjusts the vertical space between boxes */
+    transition: transform 0.3s, box-shadow 0.3s; /* Animation for hover effect */
+    cursor: pointer; /* Change cursor on hover */
+}
+
+.bank-box:hover {
+    transform: scale(1.05); /* Slightly enlarge the box on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+    background-color: rgba(18, 20, 14, 0.2);
+}
+
+
+/* FD Calculator Section */
+.fd-calculator {
+    margin: auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 400px;
+    backdrop-filter: blur(10px);
+    position: absolute;
+    right: 20%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.calculator-inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.calculator-inputs input {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: rgba(18, 20, 14, 0.2);
+}
+
+.result {
+    margin-top: 20px;
+    text-align: center;
+}
+/* Popup Styles */
+.fd-details-popup {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.6); /* Black with transparency */
+}
+
+.fd-details-content {
+    background-color: #fefefe;
+    margin: 20% auto; /* Center the popup */
+    padding: 30px; /* Adjust padding for less space inside */
+    border: 1px solid #888;
+    width: 60%; /* Set width to 50% of the viewport */
+    max-width: 400px; /* Optional: Maximum width */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Shadow effect */
+}
+
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+

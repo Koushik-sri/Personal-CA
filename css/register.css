@@ -1,0 +1,104 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    background-image: url('../img/registeration.gif'); /* Add your GIF path here */
+    background-size: 800px 600px; /* Makes the image cover the entire background */
+    background-position: left center; /* Positions the image to the left */
+    background-repeat: no-repeat;
+    color: #333;
+    padding-top: 20px;
+}
+
+.register-container {
+    width: 100%;
+    max-width: 500px;
+    background-color: rgba(175, 235, 250, 1); /* Use a semi-transparent background */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    margin-top: 120px;
+    margin-left: 600px;
+    backdrop-filter: blur(10px); /* Adjust the blur value as needed */
+}
+
+form {
+    width: 100%;
+}
+
+form h2 {
+    text-align: left;
+    font-size: 1.8em;
+    color: #032a5e77;
+    margin-bottom: 1em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #6d5dfc;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #032a5e77;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #5746d7;
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 5px #6d5dfc;
+}
+
+/* Login link inside registration box */
+.login-link {
+    text-align: left;
+    margin-top: 15px;
+    font-size: 0.9em;
+    color: #666;
+    text-align: center;
+}
+
+.login-link a {
+    color: #6d5dfc;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    
+}
+
+.login-link a:hover {
+    color: #5746d7;
+}
